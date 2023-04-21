@@ -18,4 +18,6 @@ for i in range (len(code_encrypted)):
     elif code_encrypted[i]=="#":
         code_decrypted +="i"
 #set conversion value for o
+    elif code_encrypted[i]=="+":
+        code_decrypted +="o"
 #set conversion value for u
