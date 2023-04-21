@@ -36,4 +36,6 @@ for i in range (len(code_encrypted)):
         code_decrypted+=code_encrypted[i]
 #print statement
 print ("\033[0;33m Deciphering the code...")
+import time
+time.sleep(3)
 print("\033[1;35m I've deciphered your code as", code_decrypted, '.')
