@@ -6,7 +6,11 @@ print("\033[1;35m This program is made to decrypt messages that substitutes the 
 #ask user what they want to decrypt
 code_encrypted=input('What do you want to deciper? Type the message here: ')
 code_decrypted=""
+#set parameters
+for i in range (len(code_encrypted)):
 #set conversion value for a
+    if code_encrypted[i]=="*":
+        code_decrypted +="a"
 #set conversion value for e
 #set conversion value for i
 #set conversion value for o
