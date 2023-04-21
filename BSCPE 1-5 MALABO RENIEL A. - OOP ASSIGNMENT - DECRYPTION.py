@@ -12,6 +12,8 @@ for i in range (len(code_encrypted)):
     if code_encrypted[i]=="*":
         code_decrypted +="a"
 #set conversion value for e
+    elif code_encrypted[i]=="&":
+        code_decrypted +="e"
 #set conversion value for i
 #set conversion value for o
 #set conversion value for u
