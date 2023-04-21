@@ -8,16 +8,21 @@ code_encrypted=input('What do you want to deciper? Type the message here: ')
 code_decrypted=""
 #set parameters
 for i in range (len(code_encrypted)):
-#set conversion value for a
+#if the character is '*', change it to 'a'
     if code_encrypted[i]=="*":
         code_decrypted +="a"
-#set conversion value for e
+#if the character is '&', change it to 'e' 
     elif code_encrypted[i]=="&":
         code_decrypted +="e"
-#set conversion value for i
+#if the character is '#', change it to 'i' 
     elif code_encrypted[i]=="#":
         code_decrypted +="i"
-#set conversion value for o
+#if the character is '+', change it to 'o' 
     elif code_encrypted[i]=="+":
         code_decrypted +="o"
-#set conversion value for u
+#if the character is '!', change it to 'u'
+    elif code_encrypted[i]=="!":
+        code_decrypted +="u"
+    else:
+        code_decrypted+=code_encrypted[i]
+#print statement
